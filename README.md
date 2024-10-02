@@ -1,26 +1,27 @@
 # MEDIGUIDE
 
-Introduction
+# Introduction
 Cerebral stroke is a critical medical condition characterized by an abrupt disruption in blood flow to the brain. The lack of blood flow deprives brain cells of oxygen and essential nutrients, which can result in cell death, brain damage, disability, and even death. Prompt detection and intervention are crucial to minimizing brain damage and improving patient outcomes.
 
 This project aims to address the challenge of predicting brain stroke using machine learning models, specifically focusing on highly imbalanced datasets that are common in medical diagnoses.
 
-Problem Statement
+# Problem Statement
 In this project, we tackle the issue of accurately predicting brain strokes using a dataset that contains 43,400 samples with only 783 stroke cases (a mere 1.804% of the total data). This extreme class imbalance poses significant challenges for traditional machine learning algorithms, which tend to favor the majority class, leading to poor performance in detecting the minority class (i.e., stroke cases).
 
 Our objective is to build a model that can handle this imbalance effectively and predict stroke cases with high accuracy, addressing the specific needs of medical diagnosis where false negatives can have serious consequences.
 
-Dataset
+# Dataset
 The dataset used for this project consists of 12 features, including various patient health metrics such as age, gender, hypertension, heart disease, glucose levels, and more. Out of 43,400 patient records, only 783 patients experienced a stroke, making stroke detection particularly difficult.
 
 Key Dataset Characteristics:
 Total samples: 43,400
 Stroke samples: 783 (1.804% of total)
 Features: 12 patient health attributes
-Challenges
+
+# Challenges
 The primary challenge of this project is the significant class imbalance, where stroke cases constitute less than 2% of the dataset. Machine learning models trained on such datasets often struggle to detect minority classes effectively. Without proper handling, this imbalance results in poor model performance, particularly in terms of precision, recall, and AUC-ROC.
 
-Key challenges include:
+# Key challenges include:
 
 Class Imbalance: Standard algorithms struggle to detect rare events like strokes.
 Avoiding Overfitting: Balancing the data without introducing bias or overfitting to synthetic samples.
@@ -61,7 +62,7 @@ Random Forest: 99% accuracy
 KNN: 98% accuracy
 By combining these models, we achieved the highest possible accuracy for stroke detection.
 
-Results
+# Results
 After applying various balancing techniques and machine learning algorithms, we obtained the following results:
 
 Best Accuracy: 99% using the Voting Classifier (Random Forest + KNN)
@@ -76,7 +77,8 @@ Logistic Regression	81%	0.79
 AdaBoost	89%	0.88
 Naive Bayes	60%	0.58
 Support Vector Machine (SVM)	91%	0.90
-Conclusion
+
+# Conclusion
 Through this project, we successfully addressed the challenge of brain stroke prediction in a highly imbalanced dataset. By applying a range of balancing techniques and leveraging the power of ensemble learning, we achieved a highly accurate and reliable model that can be used for early detection of brain strokes.
 
 This approach demonstrates how machine learning techniques can be used to solve real-world problems in the medical field, especially when faced with imbalanced data. Early and accurate detection of strokes is vital to improving patient outcomes, and this project provides a robust solution for this critical task.
